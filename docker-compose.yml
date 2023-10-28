@@ -1,0 +1,61 @@
+version: '3'
+services:
+  keitalk-nginx:
+    container_name: "keitalk-nginx"
+    build:
+      context: ./docker/nginx
+    depends_on:
+      - keitalk-api
+    ports:
+      - ${APP_PORTS}:80
+    volumes:
+      - ./:/src
+
+  keitalk-api:
+    container_name: "keitalk-api"
+    build:
+      context: ./docker/php
+    depends_on:
+      - keitalk-db
+    ports:
+      - ${VITE_PORTS}:5173
+    volumes:
+      - ./:/src
+      - /src/node_modules
+      - /src/vendor
+      - ./docker/php/php.ini:/usr/local/etc/php/php.ini
+
+  keitalk-db:
+    image: mysql:8.0.33
+    command: --max_allowed_packet=32505856
+    container_name: "keitalk-db"
+    volumes:
+      - ./docker/mysql:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: ${ROOT_PASSWORD}
+      MYSQL_DATABASE: ${DB_DATABASE}
+      MYSQL_USER: ${DB_USERNAME}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+    ports:
+      - ${DB_PORT}:3306
+
+  keitalk-phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: "keitalk-phpmyadmin"
+    depends_on:
+      - keitalk-db
+    environment:
+      PMA_ARBITRARY: 1
+      PMA_HOSTS: ${DB_HOST}
+      PMA_USER: ${DB_USERNAME}
+      PMA_PASSWORD: ${DB_PASSWORD}
+    ports:
+      - ${PMA_PORTS}:80
+    volumes:
+      - ./docker/phpmyadmin/sessions:/sessions
+      
+  keitalk-redis:
+    image: redis:alpine
+    container_name: "keitalk-redis"
+    ports:
+      - ${REDIS_PORT}:6379
