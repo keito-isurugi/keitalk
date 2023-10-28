@@ -4,7 +4,9 @@
   [Laravel 10 の開発環境をdockerで実現する方法](https://qiita.com/hitotch/items/869070c3a9f474a358ea)
 - Docker起動
 ```
-$ docker compose up -d
+# 以下コンテナ内で実行
+
+$ docker compose up -d # /docker/mysqlディレクトリを作成しなければいけないかも
 ```
 - Laravel10インストール
 ```.shell
