@@ -31,16 +31,14 @@ $ cd /src
 $ composer install
 $ npm install
 
-# cmd + cでコンテナから抜ける
-```
-
-- 権限の設定
-```
+# 権限の設定
 # 書き込み権限を設定
 $ chmod -R guo+w storage
 
 # storageのシンボリックリンクを設置
 $ php artisan storage:link
+
+# cmd + cでコンテナから抜ける
 ```
 
 - migration、seederを実行
