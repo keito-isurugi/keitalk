@@ -126,3 +126,4 @@
 172.25.0.1 - - [29/Oct/2023:07:17:21 +0000] "GET /api/articles HTTP/1.1" 200 10356 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36"
 172.25.0.1 - - [29/Oct/2023:07:17:32 +0000] "GET /api/articles HTTP/1.1" 200 10349 "-" "undici"
 172.25.0.1 - - [29/Oct/2023:07:18:48 +0000] "GET /images/noimage.png HTTP/1.1" 304 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36"
+172.25.0.1 - - [29/Oct/2023:12:29:46 +0000] "GET /api/articles HTTP/1.1" 200 10356 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36"
