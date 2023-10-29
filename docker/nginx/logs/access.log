@@ -25,3 +25,7 @@
 192.168.144.1 - - [28/Oct/2023:08:51:45 +0000] "GET /api/articles HTTP/1.1" 500 1218783 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36"
 192.168.144.1 - - [28/Oct/2023:08:52:04 +0000] "GET /api/articles HTTP/1.1" 200 3126 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36"
 192.168.144.1 - - [28/Oct/2023:08:52:23 +0000] "GET /api/articles HTTP/1.1" 200 3126 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36"
+192.168.144.1 - - [29/Oct/2023:02:41:19 +0000] "GET /favicon.ico HTTP/1.1" 200 0 "http://localhost:8088/api/articles" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36"
+192.168.144.1 - - [29/Oct/2023:03:16:15 +0000] "GET /api/articles HTTP/1.1" 200 3126 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36"
+192.168.144.1 - - [29/Oct/2023:03:16:18 +0000] "GET /api/articles HTTP/1.1" 200 3126 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36"
+192.168.144.1 - - [29/Oct/2023:03:16:30 +0000] "GET /api/articles HTTP/1.1" 200 3126 "-" "undici"
