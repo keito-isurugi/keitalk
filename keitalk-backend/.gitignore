@@ -19,3 +19,5 @@ yarn-error.log
 /.vscode
 /docker/mysql/*
 !/docker/mysql/
+/docker/logs/access.log
+/docker/phpmyadmin/sessions
