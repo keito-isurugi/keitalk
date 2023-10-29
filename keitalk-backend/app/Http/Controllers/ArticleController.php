@@ -9,7 +9,7 @@ class ArticleController extends Controller
 {
     public function getArticlesList()
     {
-        $articles = Article::all();
+        $articles = Article::with('category')->get();
         return $articles;
     }
 }
