@@ -19,6 +19,7 @@ class ArticleSeeder extends Seeder
                         "category_id" => rand(1, 2), 
                         "title" => "テスト記事".$i, 
                         "content" => "テスト記事です。テスト記事です。テスト記事です。".$i, 
+                        "eye_catch_image" => "images/noimage.png", 
                         "created_at" => now(), 
                         "updated_at" => now()
                     ],

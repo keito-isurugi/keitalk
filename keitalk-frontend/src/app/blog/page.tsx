@@ -17,9 +17,11 @@ export const Page = async () => {
       {data.map((d: {
         id: ReactNode; 
         title: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | PromiseLikeOfReactNode | null | undefined; 
+        eye_catch_image: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | PromiseLikeOfReactNode | null | undefined
 }) => (
         <div>
           {d.id}: { d.title }
+          <img src={`http://localhost:8088/${d.eye_catch_image}`}/>
         </div>
       ))}
     </div>
