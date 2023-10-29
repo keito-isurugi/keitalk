@@ -1,0 +1,2 @@
+2023/10/29 03:25:24 [error] 29#29: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 192.168.176.1, server: _, request: "GET /api/articles HTTP/1.1", upstream: "fastcgi://192.168.176.5:9000", host: "localhost:8088"
+2023/10/29 03:25:25 [error] 29#29: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 192.168.176.1, server: _, request: "GET /api/articles HTTP/1.1", upstream: "fastcgi://192.168.176.5:9000", host: "localhost:8088"
