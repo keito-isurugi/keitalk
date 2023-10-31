@@ -17,7 +17,7 @@ class ArticleImageSeeder extends Seeder
             DB::table("article_images")->insert([
                     [
                         "article_id" => $i, 
-                        "image_path" => "", 
+                        "image_path" => "images/test1.jpg", 
                         "created_at" => now(), 
                         "updated_at" => now()
                     ],
