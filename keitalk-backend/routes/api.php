@@ -20,3 +20,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/articles', [ArticleController::class, 'getArticlesList']);
+Route::post('/file', [ArticleController::class, 'fileUplodad']);
