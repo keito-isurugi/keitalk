@@ -2,6 +2,8 @@
 import { ReactElement, JSXElementConstructor, ReactNode, ReactPortal, PromiseLikeOfReactNode, useState } from "react";
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
 
 export const Page = () => {
   const [title, setTitle] = useState('');
@@ -27,6 +29,12 @@ export const Page = () => {
   return (
     <div>
       <h1>Quill</h1>
+      <TextField 
+        id="filled-basic" 
+        label="title" 
+        variant="filled" 
+        // onChange={setTitle} 
+      />
       <ReactQuill 
         theme="snow" 
         value={content} 
